@@ -1,0 +1,74 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.sec {
+    width: 100%;
+    background-image:
+        linear-gradient(to bottom, rgba(28, 28, 29, 0.52), rgba(26, 23, 25, 0.73)),
+        url("https://assets.nicepagecdn.com/11a8ddce/3543521/images/pexels-christina-morillo-1181435.jpg");
+    height: 84vh;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+
+    .sec_head {
+        background-color: rgba(204, 195, 195, 0.21);
+        height: fit-content;
+        padding:10px 20px;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 60px;
+        width: 80%;
+        transform: translateX(20%);
+        animation: secAnimation 1s ease-in 1s 1 normal both;
+        transition: 0.1s ease;
+        text-align: center;
+
+        @media (max-width:"1024px") {
+            top: 50px;
+            bottom: 0;
+        }
+        h1 {
+            font-family: Ubuntu, sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 1.1;
+            color: white;
+            padding: 3px 0;
+        }
+        p {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        button {
+            color: #ffffff;
+            background-color: #ff6615;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-image: none;
+            margin-top: 2px;
+            padding: 6px 20px;
+            border-radius: 25px;
+            border-color: transparent;
+            transition: 0.3s ease;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            margin-top: 20px;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+}
+
+@keyframes secAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

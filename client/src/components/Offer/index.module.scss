@@ -1,0 +1,106 @@
+// #app {
+//     height: 100%;
+//   }
+//   html,
+//   body {
+//     position: relative;
+//     height: 100%;
+//   }
+
+//   body {
+//     background: #eee;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+.swiper {
+    width: 100%;
+    
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .offer_head {
+    text-align: center;
+  
+    h5 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: .5em;
+      color: #d4d4d4;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+  
+    }
+  
+    h1 {
+      color: #000;
+      font-family: "Playfair Display", serif;
+    }
+  
+    h6 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #b8b8b8;
+      width: 50%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  
+    .cards {
+    padding: 50px 0;
+    cursor:grab;
+  
+      p {
+        line-height: 1.45;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #FDA403
+      }
+  
+      h3 {
+        line-height: 1.45;
+        color: #000;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+  
+      h4 {
+        font-family: "Raleway", sans-serif;
+        background: #fff;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #b8b8b8;
+  
+      }
+      button{
+        background: #FDA403;
+        border-color: #FDA403;
+        color: #fff;
+      }
+    }
+  
+  }
