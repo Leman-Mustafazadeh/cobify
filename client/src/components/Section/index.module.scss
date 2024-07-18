@@ -13,7 +13,7 @@
     .sec_head {
         background-color: rgba(204, 195, 195, 0.21);
         height: fit-content;
-        padding:10px 20px;
+        padding: 10px 20px;
         border-radius: 15px;
         position: absolute;
         bottom: 60px;
@@ -23,10 +23,36 @@
         transition: 0.1s ease;
         text-align: center;
 
+        .video-wrap {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100vh !important;
+            background-color: rgba(16, 16, 16, 0.781) !important;
+            z-index: 1000000;
+            background-color: red;
+        }
+
+        .video-wrap .video {
+            position: relative;
+            width: 100%;
+        }
+
+        .video-wrap .video iframe {
+            position: relative;
+            z-index: 100000;
+            width: 100%;
+        }
+
         @media (max-width:"1024px") {
             top: 50px;
             bottom: 0;
         }
+
         h1 {
             font-family: Ubuntu, sans-serif;
             font-weight: 700;
@@ -35,10 +61,12 @@
             color: white;
             padding: 3px 0;
         }
+
         p {
             color: #ffffff;
             font-size: 18px;
         }
+
         button {
             color: #ffffff;
             background-color: #ff6615;

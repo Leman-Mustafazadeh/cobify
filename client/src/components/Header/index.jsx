@@ -64,18 +64,129 @@ const Header = () => {
             <div className={styles.menu_tab}>
               <i class="fa-solid fa-bars"></i>
             </div>
-            <ul className={styles.menu}>
+
+{/* 
+            <div class="head-nav">
+              <ul class="d-flex align-items-center">
+                <li><a href="/" class="home">Home</a></li>
+                <li>
+                  <a href="" class="home-item des">
+                    <div>Destination</div>
+                    <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="des-item">
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li class="d-flex align-items-center drop">
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul class="des-title">
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="./service.html" class="home-item">Services</a></li>
+                <li><a href="./about.html" class="home-item">About</a></li>
+                <li><a href="./contact.html" class="home-item">Contact</a></li>
+              </ul>
+            </div> */}
+             <ul className={styles.menu}>
               <li>
                 <a href="/">{t("home")}</a>
+                <i class="fa-solid fa-chevron-down"></i
+                >
+                <ul className={styles.des_item}>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li className={styles.drop}>
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul className={styles.des_title}>
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
               </li>
+
+              {/* <li>
+                  <a href="" className={styles.home_item }>
+                    <div>Destination</div>
+                    <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul className={styles.des_item}>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li className={styles.drop}>
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul className={styles.des_title}>
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li> */}
+
+
               <li>
                 <a href="/">{t("reviews")}</a>
+                <i class="fa-solid fa-chevron-down"></i
+                >
+                <ul className={styles.des_item}>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li className={styles.drop}>
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul className={styles.des_title}>
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
               </li>
               <li>
                 <a href="/">{t("contact")}</a>
+                <i class="fa-solid fa-chevron-down"></i
+                >
+                <ul className={styles.des_item}>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li className={styles.drop}>
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul className={styles.des_title}>
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
               </li>
               <li>
                 <a href="/">{t("author")}</a>
+                <i class="fa-solid fa-chevron-down"></i
+                >
+                <ul className={styles.des_item}>
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li className={styles.drop}>
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul className={styles.des_title}>
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
               </li>
 
               <div>
@@ -90,7 +201,7 @@ const Header = () => {
                   <div className={styles.circle}></div>
                 </label>
               </div>
-            </ul>
+            </ul> 
 
             {isLoggedIn ? (
               <p>
